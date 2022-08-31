@@ -1,0 +1,7 @@
+com\tp1\connection\ConexionMySql.class
+com\tp1\model\Persona.class
+com\tp1\dao\PersonaDaoImplMySql.class
+com\tp1\idao\IPersonaDao.class
+com\tp1\controller\ControllerPersona.class
+com\tp1\vista\ViewPersona.class
+com\tp1\demo\Demo.class
