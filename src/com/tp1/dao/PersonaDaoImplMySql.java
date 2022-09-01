@@ -13,8 +13,8 @@ import com.tp1.model.Persona;
 public class PersonaDaoImplMySql implements IPersonaDao {
 	ConexionMySql ctmp;
 	
-	public PersonaDaoImplMySql() {
-		this.ctmp = new ConexionMySql();
+	public PersonaDaoImplMySql(ConexionMySql conexion) {
+		this.ctmp = conexion;
 	}
 	
 	public void crear() throws SQLException{
@@ -81,6 +81,7 @@ public class PersonaDaoImplMySql implements IPersonaDao {
 
 	@Override
 	public boolean actualizarPersona(Persona persona) {
+		// intente hacer un update y tira error, y cuando logre que no tire error no lo actualizaba, me canse y lo solucione dropeando a la persona y volviendola a agregar
 		if(eliminarPersona(persona)&&registrar(persona))
 			return true;
 		else

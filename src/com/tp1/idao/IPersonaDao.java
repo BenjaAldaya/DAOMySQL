@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import com.tp1.model.Persona;
 
 
+
 public interface IPersonaDao {
 
 	public boolean registrar(Persona persona);
